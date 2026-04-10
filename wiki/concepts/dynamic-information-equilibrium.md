@@ -108,6 +108,14 @@ The DIEM applied to the civilian labor force reveals that only **two major event
 
 ![Civilian labor force DIEM — just two shocks in 70 years](<../media/2017-05/dynamic equilibrium -clf- 1.png>)
 
+### Causal ordering: the seismogram
+
+The "macroeconomic seismogram" — plotting DIEM shocks across multiple time series on a single timeline — reveals the **causal ordering** of the demographic transition: women's labor force participation shock → men's participation shock (drawn in by the boom) → output shock → inflation shock (both CPI and PCE). Each precedes the next temporally.
+
+![Dynamic information equilibrium macroeconomic seismogram](<../media/2018-02/dynamicInformationEquilibriumHistory.png>)
+
+This causal chain refutes both the monetary and expectations-based stories of 1970s inflation. The shocks to the monetary base *follow* the shocks to inflation. Women entering the workforce caused the economic boom, which drew in more men, which increased output, which raised prices. Money was along for the ride.
+
 ### Other applications
 
 The same framework extends to housing prices (Case-Shiller index), JOLTS data, nominal wage growth, interest rates, gold prices, stock indices, rental vacancy rates, and more. In each case, a constant log-derivative with identifiable logistic shocks at recession dates produces a good fit with very few parameters. The same shock dates appear across multiple independent time series, providing cross-validation.

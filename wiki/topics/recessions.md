@@ -39,15 +39,25 @@ The size distribution should follow a power law (more small recessions than larg
 
 The hazard function is consistent with this. Fitting the empirical distribution of post-WWII recovery lengths to a gamma distribution yields a mean of 4.8 years and a standard deviation of 3.1 years — so recoveries do "grow old" (the SF Fed's claim that they don't is an artifact of using a graph window that hides the leveling-off), but the variance is so wide that the hazard function looks nearly flat over most of the recovery's life. Pre-WWII the mean was 2.2 years with σ ≈ 1 year — much sharper. The post-WWII spread is much larger, consistent with avalanches triggered by largely random coordination events rather than cyclical clockwork.
 
-## The Great Recession narrative
+## The Great Recession: a complete causal timeline
 
-The ITM's distinctive story about the 2008 crisis: **the Fed caused it** by tightening monetary policy from 2005 onward. Both the monetary base (M0 and MB) and short-term interest rates departed from their early-2000s log-linear path in the direction of contraction. In the ITM framing, the NGDP-MB path was being pushed up against the NGDP-M0 trend line, a configuration that produces yield-curve inversion (because the [[currency-vs-reserves|short rate]] determined by MB is moving above the long rate determined by M0). The Fed steers the economy by adjusting MB, and during 2005–2008 it was steering toward contraction.
+The ITM's story of the 2008 crisis evolved over time. The early version (2014) attributed it to Fed tightening from 2005 onward. By 2018, the [[dynamic-information-equilibrium]] seismogram provides a much richer and more precise timeline:
 
-![NGDP-M0 path (solid blue) being pushed against trend (black) before 2008](<../media/2014-09/ite does MB influence M0 -question- C.png>)
+![Great Recession seismogram — complete causal chain](<../media/2018-11/historyGR2.png>)
 
-The ~15% nominal shock that followed was the avalanche — the accumulated tension released as a large coordination event. Lehman wasn't the cause; it was the trigger. The pile had been growing for years.
+**Mid-2006**: The very first signal is a drop in **construction hires** — before housing starts decline, before the Fed stops raising rates, and over a year before the NBER recession. Jobs were still being advertised in construction, but fewer were being hired, suggesting a labor supply constraint rather than a demand collapse.
 
-The post-crisis QE response was much larger than necessary in the ITM's accounting. A roughly $200 billion expansion would have sufficed to restore the NGDP-M0 path to its pre-crisis trajectory; the Fed expanded by ~$3 trillion. The extra reserves had no effect on inflation (because they didn't enter M0 — see [[currency-vs-reserves]] and [[quantitative-easing]]) and only modest effect on rates.
+**Late 2006–2007**: Drop in **conceptions** (a social indicator preceding economic indicators), Fed conference calls about collapsing housing markets, first rate cut. The Case-Shiller index begins its negative shock.
+
+**2008**: The events the media and most economists focus on — Lehman collapse, stock market crash, GDP decline, unemployment spike — all come **in the middle or at the end** of a process that started two years earlier.
+
+**Debt**: Negative shocks to debt measures come *after* the recession is underway. Debt may have worsened the recession's severity but did not determine its timing.
+
+**A speculative cause: xenophobia.** Anti-immigrant legislation and protests erupted in March 2006, exactly when construction hires began falling. E-verify mandates prevented employers from hiring undocumented workers. Immigration from Mexico had been declining since 2004. The construction sector — heavily dependent on immigrant labor — experienced a labor supply shock that cascaded through the economy. This would make the Great Recession partly a self-inflicted wound from anti-immigrant policy, not purely a financial crisis.
+
+The earlier monetary narrative (NGDP-M0 path pushed against trend by Fed tightening) remains valid as a complementary view, but the DIEM seismogram shows a more complex multi-year process starting with a labor supply shock in construction, not a single monetary event.
+
+The post-crisis QE response was much larger than necessary in the ITM's accounting. A roughly $200 billion expansion would have sufficed; the Fed expanded by ~$3 trillion. The extra reserves had no effect on inflation (see [[currency-vs-reserves]] and [[quantitative-easing]]).
 
 ## Recovery regularity
 
@@ -68,6 +78,12 @@ The implication: if anyone claims to know what "normal" macroeconomic growth loo
 ![Federal spending and credit transitions — both logistic](<../media/2017-04/assets liabilities information equilibrium spending.png>)
 
 This is an observation backed by the IE model, not just speculation. The DIEM identifies these transitions as specific logistic shocks with measurable centers, widths, and amplitudes. Once you subtract them, the "recovery" question changes entirely.
+
+## Conceptions as the earliest leading indicator
+
+The [[dynamic-information-equilibrium]] model applied to conception rates reveals them as the **longest-lead indicator** of recessions — conception rates begin falling several quarters before NBER recession dates, preceding even JOLTS hires, job openings, and quits. A social indicator leads all economic indicators, suggesting recessions begin as diffuse shifts in social sentiment (family planning decisions) before manifesting in hiring, spending, and output data.
+
+The DIEM fits conception rate data well, and its shocks in the seismogram consistently precede all purely economic time series. This supports the [[entropic-forces]] interpretation: recessions involve human coordination that starts as shared social pessimism and only later crystallizes into correlated economic behavior. A recession is a complex multi-year process that is already underway in social life long before the NBER calls it.
 
 ## Why interest rates aren't a good policy indicator
 

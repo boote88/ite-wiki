@@ -189,3 +189,12 @@ type: log
 ## [2026-04-10] update | topics/phillips-curve.md — Phillips curve caused by women entering workforce; sexism amplification hypothesis
 ## [2026-04-10] update | entities/jason-smith.md — book published August 2017; Evonomics article May 2017
 ## [2026-04-10] update | CLAUDE.md + index.md — sources section deprecated; cite raw/ directly; synthesize into wiki pages
+## [2026-04-10] update | entities/jason-smith.md — SSRN paper January 2018
+## [2026-04-10] update | concepts/quantity-theory-of-labor.md — immigration as remaining growth engine; unauthorized immigration 1990s wave
+## [2026-04-10] update | topics/money-as-bandwidth.md — "money is the aether of macroeconomics"; MMT/Austrian convergence at high inflation
+## [2026-04-10] update | topics/quantity-theory-of-money.md — monetary model formally rejected Jan 2018; k(t) tracked demographic dissipation
+## [2026-04-10] update | concepts/dynamic-information-equilibrium.md — causal ordering seismogram (women→men→output→inflation)
+## [2026-04-10] update | topics/solow-growth-model.md — Solow paradox: household tech expanded labor force; computers didn't
+## [2026-04-10] update | synthesis/physics-toolkit.md — KL divergence as price detector / GAN objective
+## [2026-04-10] update | topics/recessions.md — Great Recession complete DIEM timeline; xenophobia hypothesis; conceptions as leading indicator
+## [2026-04-10] create | concepts/economic-seismogram.md — multi-series DIEM visualization; causal ordering reveals demographic → labor → output → inflation chain

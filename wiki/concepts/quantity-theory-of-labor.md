@@ -9,7 +9,7 @@ sources:
 created: 2026-04-09
 last_updated: 2026-04-09
 ---
-
+I 
 # Quantity Theory of Labor
 
 The **quantity theory of labor** is a model of long-run economic growth that the [[information-transfer-model]] discovered in early 2016: NGDP, the price level, and economic growth itself are determined primarily by the size of the **civilian labor force** rather than by money, technology, or capital. It's the most provocative reframing of macroeconomics in the wiki because, if right, it implies that nearly every standard explanation of growth and inflation is at best a side-effect of the underlying labor-force dynamics.
@@ -51,6 +51,12 @@ The quantity theory of labor has far-reaching consequences if taken seriously:
 **Technology growth is irrelevant except indirectly.** Robert Gordon's story of the "Great Inventions" driving the 20th-century growth miracle becomes a side-effect: technology mattered insofar as it allowed more people to participate in the labor force (mechanization freeing agricultural labor for industry; appliances freeing women from domestic work; transport allowing geographic mobility). The growth wasn't *caused* by inventions; it was caused by the resulting changes in labor force composition.
 
 **Keynesian fiscal stimulus works through labor force expansion.** Public works create jobs that draw people into the labor force; that's the channel. Inflation-based fiscal mechanisms are red herrings.
+
+**Immigration is the remaining growth engine.** With the women-entering-workforce transition complete and population growth slowing, immigration is the only remaining source of labor-force-driven GDP expansion in the US. A shock to the labor force produces an NGDP shock roughly 4–6 times larger. Restricting immigration by 2 million people over four years → ~$1 trillion lower NGDP by 2022 (~$500B per million people). This makes anti-immigration policy a self-inflicted macroeconomic wound of the first order.
+
+An intriguing finding: unauthorized immigration data is consistent with a large inflow shock in the 1990s that **picks up exactly where women entering the workforce leaves off** — maintaining labor force growth after the demographic transition completed. The dot-com bubble, housing bubble, and financial crisis all follow the waning of that immigrant-driven growth wave.
+
+![NGDP and CLF with immigration shock](<../media/2018-01/immigration3.png>)
 
 **The Solow model degenerates.** In the [[solow-growth-model]] with this scaling, labor has an exponent of ~4 and capital has an exponent of 0. Capital does not enter the long-run growth equation in any meaningful way.
 

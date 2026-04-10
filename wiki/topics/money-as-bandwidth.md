@@ -47,7 +47,17 @@ The most provocative conclusion: in modern moderate-inflation economies, **money
 
 3. **Trivial high-inflation role**: in a multi-factor model with money $M$, labor $L$, and other factors, the inflation equation is $\pi \sim \langle \alpha - 1 \rangle \lambda + \ldots + \langle \beta - 1 \rangle \mu$. When money growth $\mu$ is large, the money term dominates and you get the [[quantity-theory-of-money]]. But this is a trivial relationship that only holds over 10% inflation. For modern economies, the demographic and supply terms dominate.
 
-The conclusion: $\partial R / \partial M \approx 0$ for any macroeconomic variable $R$ in policy-relevant modern scenarios. Money doesn't need to be understood, defined, or tracked to predict inflation, output, or employment in normal times. Only in truly extreme cases (hyperinflation, or removing money entirely) does it make a difference. See [[quantity-theory-of-labor]] and [[quantitative-easing]] for related stories.
+The conclusion: $\partial R / \partial M \approx 0$ for any macroeconomic variable $R$ in policy-relevant modern scenarios. Money doesn't need to be understood, defined, or tracked to predict inflation, output, or employment in normal times. Only in truly extreme cases (hyperinflation, or removing money entirely) does it make a difference.
+
+## Money is the aether of macroeconomics
+
+The strongest version of this argument: the endless search for the "right" monetary aggregate (M1? M2? MZM? NGDP expectations? Government debt?) is the macroeconomic equivalent of searching for the luminiferous aether. Something *must* be the medium in which inflation waves propagate! M1 didn't work, so M2! Interest rates! No, it's expectations of monetary expansion! No, it's expectations of monetary expansion *that might be taken away!*
+
+This parallels the history of physics exactly. Aether dragging → partial aether dragging → the realization that the medium doesn't exist and electromagnetic waves propagate through the geometry of spacetime itself. In economics: money dragging (QTM) → partial money dragging (expectations-augmented QTM) → the realization that inflation is demographic and money is just along for the ride.
+
+MMT and Austrian economics both start from the premise "money is a tool for moving real resources" — they just disagree on how much inflation is acceptable. But both are empirically supported only in the high-inflation regime where the [[quantity-theory-of-money]] holds. At moderate inflation, neither has empirical traction. The ITM shows why: money enters through a mathematical identity (chain rule + M/M = 1) and is therefore arbitrary. Whatever you think money is, it doesn't matter — unless you're in hyperinflation or a financial system seizure.
+
+The real driver of post-war US inflation was **demographic** — shocks to the labor force size precede and predict shocks to inflation, while shocks to the monetary base *follow* them. Money was the iron filings; labor force change was the magnet. See [[quantity-theory-of-labor]] and [[inflation]].
 
 ## New channels problem
 

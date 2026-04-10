@@ -25,6 +25,7 @@ last_updated: 2026-04-07
 - [[quantity-theory-of-labor]] — NGDP and inflation in IE with civilian labor force; capital exponent zero; demographics is destiny
 - [[dynamic-information-equilibrium]] — DIEM: constant log-derivative + logistic shocks; major new framework from 2017
 - [[information-bottleneck]] — Prices destroy information (not transmit it); resolves Hayek and Stiglitz; GAN analogy
+- [[economic-seismogram]] — Multi-series DIEM visualization revealing causal ordering of shocks across the economy
 
 ## Entities
 

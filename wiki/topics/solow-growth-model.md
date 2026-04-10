@@ -29,9 +29,13 @@ $$X : \text{NGDP} \rightleftarrows K$$
 
 where $X$ is the capital deflator. The general equilibrium solution is the Cobb-Douglas form $\text{NGDP} = n_0 (L/l_0)^{\beta} (K/k_0)^{\gamma}$, which fits empirical data extremely well — and the exponents differ across countries depending on how capital-intensive each economy is. The US has $\beta \approx 0.8, \gamma \approx 0.7$; the UK has $\beta \approx 0.5, \gamma \approx 1.0$ (much more capital-intensive). This is the [[quantity-theory-of-labor]] (with capital) — the most comprehensive ITM model of long-run macroeconomic dynamics, and the one that resolves the puzzles left by the labor-only version.
 
-## Total factor productivity
+## Total factor productivity and the Solow paradox
 
-TFP (the Solow residual) is reinterpreted as real NGDP growth "unlocked" by monetary expansion — real growth minus inflation, resulting from monetary expansion when MB growth < NGDP growth. The "great stagnation" is simply diminishing returns to monetary expansion as κ increases.
+TFP (the Solow residual) is reinterpreted as real NGDP growth "unlocked" by labor force expansion — and the "great stagnation" is simply the exhaustion of that labor force growth source.
+
+The **Solow paradox** ("You can see the computer age everywhere but in the productivity statistics") gets a clean explanation in this framework: household technology (washing machines, dishwashers) allowed new people **to enter** the labor force, while computers were mostly used by people **already in** the labor force. Technologies that expand who participates show up in GDP; technologies that make existing participants more efficient may not, because GDP doesn't measure what's not counted.
+
+This can be pushed further: the "great inflation" of the 1970s may partly be a **measurement artifact**. Household production (not counted in GDP) was automated by labor-saving appliances, freeing people for labor-market work (counted in GDP). If household production were counted, there might not have been a "great inflation" at all — just a reclassification of activity from uncounted to counted categories.
 
 ## A more radical reframing
 

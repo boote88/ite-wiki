@@ -37,7 +37,8 @@ Modern monetarism has the structure of what Lakatos called a "degenerative resea
 
 George Selgin's monetarist primer is a clean illustration: there's supply and demand for money, but no real way to measure either, so we should use the concept of money demand (which is different from wanting money) and define economic growth as money demand growing slower than the unmeasurable money supply. As Smith summarizes: "We don't need to decide what money is because we just assume how macroeconomics works." The information equilibrium framework makes this kind of move impossible — every relationship has to specify what variables are in equilibrium with what, and those variables have to be measurable. The ITM's answer to "what is money?" — empirically, it's M0 (currency in circulation) for the price level and MB for short-term interest rates (see [[currency-vs-reserves]]) — was found by checking which aggregate actually fit the data, not by retreating to ever-more-abstract definitions.
 
-## References
+## The monetary model formally rejected
 
-- [Which is failing: ITM or QTM? (2013-06-29)](../../raw/2013/06/which-is-failing-itm-or-qtm.md)
-- [Does multiplying MB by 2 cut value by 2 or e? (2013-06-19)](../../raw/2013/06/does-multiplying-monetary-base-by-2-cut.md)
+In January 2018, Smith formally rejected his own monetary information equilibrium model ($P \sim k(t) M_0$) after four years of data showed it was biased low. The falling $k(t)$ had been tracking the dissipation of the 1970s demographic shock, not a monetary phenomenon. Once the shock faded, the model underestimated inflation by ~40 basis points. A constant 1.7% core PCE inflation model — the [[dynamic-information-equilibrium]] prediction — outperformed both the monetary model and the NY Fed DSGE model.
+
+This isn't just a model rejection; it's the formal end of Smith's "vestigial monetarism." The entire monetary IE framework (which had been one of the blog's earliest successes) is replaced by the demographic/DIEM approach. "It only took me 4 years of looking at the data to reject monetary explanations of macro observables like inflation."

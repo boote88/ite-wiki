@@ -30,6 +30,7 @@ Smith aims to develop an "emergent" theory of macroeconomics — analogous to ho
 - **[[arxiv-paper]]**: "Information equilibrium as an economic principle" (arXiv:1510.02435, October 2015)
 - **Book**: *A Random Physicist Takes on Economics* (August 2017) — published as both e-book and physical paperback after reader requests
 - **Evonomics article**: "Hayek Meets Information Theory — and Fails" (May 2017) — first mainstream publication of the ITM critique
+- **SSRN paper**: "Maximum entropy and information theory approaches to economics" ([SSRN:3094757](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3094757), January 2018) — more detailed treatment including presentation material and the DIEM
 
 ## Blog trajectory
 
