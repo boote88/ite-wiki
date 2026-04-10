@@ -39,6 +39,14 @@ Two additional major insights from 2017:
 - The price mechanism works as an [[information-bottleneck]] that *destroys* irrelevant private information, not as a Hayekian information transmitter
 - The [[quantity-theory-of-labor]] suggests that demographics — not money or technology — drive long-run growth and inflation
 
+## The complete macro model (2019)
+
+By 2019, the separate pieces are assembled into a single preliminary macro model connecting labor markets, output, wages, and prices:
+
+![Complete information equilibrium macro model](<media/2019-03/models.png>)
+
+Blue double arrows = [[information-equilibrium]] relationships. Purple single arrows = [[dynamic-information-equilibrium]] relationships. Two exogenous inputs drive the system: **business cycle shocks** (possibly triggered when wage growth reaches NGDP growth, degrading firm profitability) and **social/demographic shocks** (women entering workforce, baby boomers, immigration changes). The [[economic-seismogram]] reveals the causal ordering of shocks across these channels. Money and the Fed are conspicuously absent from the core model — consistent with the conclusion that [[money-as-bandwidth|money is the aether of macroeconomics]].
+
 ## Key predictions and results
 
 - **[[sticky-prices]]** emerge from [[non-ideal-information-transfer]] without microfoundations

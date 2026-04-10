@@ -31,6 +31,7 @@ Smith aims to develop an "emergent" theory of macroeconomics — analogous to ho
 - **Book**: *A Random Physicist Takes on Economics* (August 2017) — published as both e-book and physical paperback after reader requests
 - **Evonomics article**: "Hayek Meets Information Theory — and Fails" (May 2017) — first mainstream publication of the ITM critique
 - **SSRN paper**: "Maximum entropy and information theory approaches to economics" ([SSRN:3094757](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3094757), January 2018) — more detailed treatment including presentation material and the DIEM
+- **Book 2**: *A Workers' History of the United States 1948-2020* (June 2019) — the demographic/social thesis applied to US postwar economic history; sexism and racism as drivers through [[labor-market|labor markets]]
 
 ## Blog trajectory
 

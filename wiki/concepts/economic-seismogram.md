@@ -47,6 +47,10 @@ The seismogram shows the Great Recession was a **multi-year process** beginning 
 
 Across recessions, shocks to different time series cluster around similar dates but don't perfectly align. JOLTS hires lead JOLTS openings; unemployment lags both; wage growth shocks come even later. The imperfect synchronization is itself informative — it shows which channels transmit the shock first and which markets adjust last.
 
+### Consumer sentiment and conceptions as social channels
+
+Consumer sentiment (University of Michigan index) follows a DIEM with shocks that lead unemployment by ~15–16 months — comparable to conceptions as a social leading indicator. Both are "social" channels preceding economic channels, consistent with the view that [[recessions]] begin as shifts in social mood before manifesting in labor markets. Not all recessions show up in all channels: the 2001 recession was a "surprise" in sentiment data, just as the 1991 recession was a surprise in conceptions data. The seismogram's power comes from having many independent channels where no single one needs to be universally reliable.
+
 ## The seismogram as a tool
 
 The seismogram works because it treats the economy as a **set of independent channels**, each with its own dynamic equilibrium, all potentially affected by common underlying events. By fitting each channel independently and then comparing, you avoid the circularity of models that impose cross-variable constraints (like DSGE models where the relationships between variables are assumed, not discovered).

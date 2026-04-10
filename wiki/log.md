@@ -198,3 +198,9 @@ type: log
 ## [2026-04-10] update | synthesis/physics-toolkit.md — KL divergence as price detector / GAN objective
 ## [2026-04-10] update | topics/recessions.md — Great Recession complete DIEM timeline; xenophobia hypothesis; conceptions as leading indicator
 ## [2026-04-10] create | concepts/economic-seismogram.md — multi-series DIEM visualization; causal ordering reveals demographic → labor → output → inflation chain
+## [2026-04-10] update | topics/labor-market.md — wage growth dynamics: accelerates until recession cuts off; ceiling near NGDP growth
+## [2026-04-10] update | overview.md — complete macro model diagram (2019) with two exogenous inputs
+## [2026-04-10] create | synthesis/1990s-phase-transition.md — catalog of trends that changed as demographic transition completed
+## [2026-04-10] update | entities/jason-smith.md — second book published June 2019
+## [2026-04-10] update | topics/solow-growth-model.md — IR Solow paradox: slave trade growth shock → IR arrives as it fades
+## [2026-04-10] update | concepts/economic-seismogram.md — consumer sentiment leads unemployment by ~15-16 months

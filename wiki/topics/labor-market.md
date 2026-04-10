@@ -101,3 +101,7 @@ The natural rate of unemployment emerges from the model as a ratio of informatio
 $$u^* \approx \frac{\kappa_{LS}}{\kappa_U}$$
 
 where $\kappa_{LS}$ comes from the labor supply market and $\kappa_U$ from the unemployment market. This makes NAIRU **endogenous** to the model rather than a free parameter to be estimated by observing the very inflation it's supposed to predict (see [[unobservables]]). Maximum entropy considerations alone — finite labor supply combined with many possible consumption periods — also produce a natural rate without any reference to wage rigidity. See [[phillips-curve]] for the reinterpretation of the Phillips curve as mean reversion around this natural rate.
+
+## Wage growth dynamics
+
+In the [[dynamic-information-equilibrium]] framework, wage growth accelerates continuously during recoveries until a recession "cuts it off." Wage growth lags JOLTS hires by ~11 months and unemployment rate changes by ~6 months — recessions precede wage drops, not the other way around. A potential ceiling effect: wage growth appears to experience a negative shock when it approaches NGDP growth. The intuition: if average wages grow faster than average output, firm profitability degrades, eventually triggering a recession. This makes wage growth a *consequence* of labor market tightening, not a cause of inflation — further undermining the [[phillips-curve]] story.

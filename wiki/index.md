@@ -91,3 +91,4 @@ Early ingest summaries from 2013–2015. No longer created — source posts are 
 - [[physics-toolkit]] — Running catalog of physics/math concepts used in the ITM, organized by domain
 - [[math-toolkit]] — Running catalog of analytical and computational techniques used in the ITM (DEs, fitting, DIEM, simulation)
 - [[standard-results-from-ie]] — Reference catalog of mainstream economic results derivable from information equilibrium
+- [[1990s-phase-transition]] — Catalog of economic trends that all changed in the 1990s as the demographic transition completed
