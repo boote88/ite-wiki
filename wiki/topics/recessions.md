@@ -85,6 +85,22 @@ The [[dynamic-information-equilibrium]] model applied to conception rates reveal
 
 The DIEM fits conception rate data well, and its shocks in the seismogram consistently precede all purely economic time series. This supports the [[entropic-forces]] interpretation: recessions involve human coordination that starts as shared social pessimism and only later crystallizes into correlated economic behavior. A recession is a complex multi-year process that is already underway in social life long before the NBER calls it.
 
+## The COVID recession: twig crack on a building avalanche
+
+The COVID-19 pandemic provides the most dramatic real-time test of the ITM recession framework. The standard narrative treats COVID as an exogenous shock — a pandemic from outside the economic system that caused a sudden recession. The DIEM seismogram tells a different story: **a recession was already building before the pandemic**.
+
+JOLTS job openings data shows deviations starting in **December 2019** — three months before lockdowns. The yield curve had already inverted. Wage growth was approaching the NGDP growth ceiling (the "limits to wage growth" trigger). Every recession leading indicator in the ITM framework was already flashing.
+
+![JOLTS job openings deviation starting December 2019 — before COVID](<../media/2020-04/joltsJOR.png>)
+
+COVID was the **twig crack that caused an avalanche** that was already building. The pandemic acted as a sudden, unambiguous coordinating signal — like a Fed rate hike, but much sharper. Because the signal was so sharp, the unemployment spike was compressed in time (weeks instead of months), but the underlying mechanism was the same [[entropic-forces|coordination failure]] that drives all recessions.
+
+Smith predicted the recovery would be slow: even the initial rise to 4.4% (in March 2020 data) would take ~3 years to return to 3.5% along the [[dynamic-information-equilibrium]] path, because unemployment falls at its constant recovery rate (~0.49 pp/year) regardless of the cause of the recession.
+
+![Counterfactual unemployment path — slow recovery predicted](<../media/2020-04/unrateCounterfactual1.png>)
+
+This is the strongest test of the "avalanche, not cycle" view: if COVID were purely exogenous, there should have been no leading indicators. The fact that JOLTS, the yield curve, and wage growth all signaled trouble *before* the pandemic means the recession was at least partly endogenous, with COVID as the trigger rather than the cause.
+
 ## Why interest rates aren't a good policy indicator
 
 A consequence of the avalanche framing: trying to "steer" the economy with interest rates is like pouring more snow on a mountain to manage when an avalanche happens. You can postpone the avalanche but you also increase its eventual size. The Fed's mid-2000s tightening was successful in cooling the economy — and successful in setting up a much larger avalanche than would otherwise have occurred. There is no "stance" of monetary policy that is independent of where the economy already sits on the [[information-trap|information surface]] (see [[unobservables]]).

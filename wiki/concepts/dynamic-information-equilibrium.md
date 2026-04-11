@@ -116,9 +116,15 @@ The "macroeconomic seismogram" — plotting DIEM shocks across multiple time ser
 
 This causal chain refutes both the monetary and expectations-based stories of 1970s inflation. The shocks to the monetary base *follow* the shocks to inflation. Women entering the workforce caused the economic boom, which drew in more men, which increased output, which raised prices. Money was along for the ride.
 
+### COVID-19 epidemiology
+
+In 2020, the DIEM was applied beyond economics to **COVID-19 case and death trajectories**. The matching function (virus + healthy person → sick person) has the same information-theoretic structure as job openings + unemployed → hire. The DIEM predicts constant log-linear decline in cases/deaths after a surge, with new surges appearing as logistic shocks — exactly what was observed. The April 2020 forecast for the US outbreak path was remarkably accurate until the second surge (a non-equilibrium event in the DIEM framing).
+
+This cross-domain application demonstrates that the DIEM is not economics-specific but a general framework for matching processes in growth/decay dynamics. The same math that describes unemployment recoveries describes pandemic waves.
+
 ### Other applications
 
-The same framework extends to housing prices (Case-Shiller index), JOLTS data, nominal wage growth, interest rates, gold prices, stock indices, rental vacancy rates, and more. In each case, a constant log-derivative with identifiable logistic shocks at recession dates produces a good fit with very few parameters. The same shock dates appear across multiple independent time series, providing cross-validation.
+The same framework extends to housing prices (Case-Shiller index), JOLTS data, nominal wage growth, interest rates, gold prices, stock indices, rental vacancy rates, manufacturing employment, consumer sentiment, and more. In each case, a constant log-derivative with identifiable logistic shocks produces a good fit with very few parameters. The same shock dates appear across multiple independent time series, providing cross-validation.
 
 ## Validation in agent-based models
 

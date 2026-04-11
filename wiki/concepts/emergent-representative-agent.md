@@ -54,3 +54,19 @@ The Wikipedia list of cognitive biases is over 165 entries long and growing. Beh
 The right baseline isn't a rational agent; it's the maximum-entropy distribution over the opportunity set. When you measure deviations from *that* baseline, most "biases" disappear because they were never deviations from anything real. The endowment effect, money illusion, and several other staples of behavioral economics aren't irrational once you stop pretending the baseline is rational maximization.
 
 The diffusion analogy makes the point cleanly. From a macroscopic view, gas diffusion looks like the "rational behavior" of a gas — atoms spread to fill their container. From the perspective of an individual atom, the random Brownian motion would look like a "cognitive bias" — why doesn't this atom head straight for the lowest-density region? The answer is that there is no force on the individual atom; the apparent rationalization is an entropic effect that exists only at the macro scale. In behavioral economics, the same thing is happening: there is no "rational agent" at the micro level for biases to deviate from. The rationality is emergent.
+
+## Two limits of human complexity
+
+The utility approach and information equilibrium represent two opposite limits:
+- **Utility**: agents are simple enough to model — a function $u(x)$ captures their choices. A sequence of choices looks like {5, 5, 5, 5, 4, 6, 5, 5} — low algorithmic complexity
+- **Information equilibrium**: agents are so complex they're algorithmically random — no computer program can reproduce their choices except a list of those choices. A sequence looks like {4, 7, 3, 4, 1, 6, 6, 5, 4, 2} — maximum algorithmic complexity
+
+With millions of algorithmically random agents, the aggregate distribution is uniform across the opportunity set. Economics becomes about the **shape of the opportunity set** (measured by information theory), not about what's inside agents' heads.
+
+![Random agents in 2D opportunity set produce demand curves](<../media/2020-02/beckerideal.gif>)
+
+As prices change (budget constraint rotates), the average allocation shifts — producing a downward-sloping demand curve from pure randomness. Non-equilibrium occurs when agents "bunch up" — make correlated choices and don't fully map the opportunity set:
+
+![Non-equilibrium: agents bunch up in the opportunity set](<../media/2020-02/beckernonideal.gif>)
+
+This turns economics on its head: instead of figuring out what choices people will make, it's about **measuring the set of choices made by people**.

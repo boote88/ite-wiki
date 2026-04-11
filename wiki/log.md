@@ -204,3 +204,6 @@ type: log
 ## [2026-04-10] update | entities/jason-smith.md — second book published June 2019
 ## [2026-04-10] update | topics/solow-growth-model.md — IR Solow paradox: slave trade growth shock → IR arrives as it fades
 ## [2026-04-10] update | concepts/economic-seismogram.md — consumer sentiment leads unemployment by ~15-16 months
+## [2026-04-11] update | concepts/emergent-representative-agent.md — two limits of human complexity; Becker random agents with animations
+## [2026-04-11] update | topics/recessions.md — COVID recession: twig crack on building avalanche; JOLTS deviated Dec 2019 before pandemic
+## [2026-04-11] update | concepts/dynamic-information-equilibrium.md — COVID-19 epidemiology application; cross-domain validation
