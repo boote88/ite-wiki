@@ -35,7 +35,11 @@ Smith aims to develop an "emergent" theory of macroeconomics — analogous to ho
 
 ## Blog trajectory
 
-- 2013–2018: active research blogging (~1,530 posts)
-- 2017: year of the [[dynamic-information-equilibrium]]; book published; Evonomics article
-- 2019–2021: occasional updates
-- 2022–2023: transition to Substack
+- **2013–2016**: active research blogging, framework development (~1,030 posts)
+- **2017**: year of the [[dynamic-information-equilibrium]]; book 1 published; Evonomics article (~240 posts)
+- **2018**: DIEM forecasting era; monetary model formally rejected; Great Recession timeline (~170 posts)
+- **2019**: *Workers' History* book 2 published; 1990s phase transition synthesis (~80 posts)
+- **2020**: COVID as twig crack on building avalanche; DIEM applied to epidemiology (~14 posts)
+- **2021**: COVID recovery tracking; "recession of 2027" prediction; eight-year retrospective (~5 posts)
+- **2022**: COVID DIEM outbrief; credibility revolution critique; **transition to Substack** at [infoeqm.substack.com](https://infoeqm.substack.com/)
+- **2023**: final blog posts are just redirects to Substack; blog era ends

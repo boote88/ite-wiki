@@ -207,3 +207,7 @@ type: log
 ## [2026-04-11] update | concepts/emergent-representative-agent.md — two limits of human complexity; Becker random agents with animations
 ## [2026-04-11] update | topics/recessions.md — COVID recession: twig crack on building avalanche; JOLTS deviated Dec 2019 before pandemic
 ## [2026-04-11] update | concepts/dynamic-information-equilibrium.md — COVID-19 epidemiology application; cross-domain validation
+## [2026-04-15] update | topics/recessions.md — limits to wage growth hypothesis; recession of 2027 prediction; Keynesian causality reversed
+## [2026-04-15] update | entities/jason-smith.md — complete blog trajectory; Workers' History book; transition to Substack
+## [2026-04-15] update | overview.md — all years marked complete; Substack link added
+## [2026-04-15] complete | All ~1,555 blog posts (2013-2023) processed and synthesized into wiki

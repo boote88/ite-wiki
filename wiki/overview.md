@@ -86,14 +86,18 @@ The ITM engages with several major figures in macroeconomics, often finding part
 
 ## Ingest Progress
 
+All ~1,555 blog posts (2013–2023) have been processed and synthesized into this wiki.
+
 - [x] 2013 (125 posts) — framework foundations through maturation
 - [x] 2014 (231 posts) — theoretical foundations, entropy, universality
-- [ ] 2015 (375 posts) — peak output, broad application *(Jan–May partially ingested)*
-- [ ] 2016 (302 posts) — continued development
-- [ ] 2017 (242 posts) — dynamic equilibrium era begins
-- [ ] 2018 (173 posts) — forecasting and validation
-- [ ] 2019 (82 posts) — data updates
-- [ ] 2020 (14 posts) — COVID shock analysis
-- [ ] 2021 (5 posts) — retrospective
-- [ ] 2022 (3 posts) — outbrief
-- [ ] 2023 (3 posts) — transition to Substack
+- [x] 2015 (375 posts) — peak output, broad application
+- [x] 2016 (302 posts) — quantity theory of labor, partition functions, inequality
+- [x] 2017 (242 posts) — dynamic information equilibrium, information bottleneck, self-similarity
+- [x] 2018 (173 posts) — money as aether, Great Recession timeline, DIEM applied to epidemiology
+- [x] 2019 (82 posts) — 1990s phase transition, complete macro model, Workers' History book
+- [x] 2020 (14 posts) — COVID as twig crack, DIEM for COVID-19
+- [x] 2021 (5 posts) — entropic shocks, recession of 2027 prediction
+- [x] 2022 (3 posts) — COVID DIEM outbrief, credibility revolution critique
+- [x] 2023 (3 posts) — transition to Substack (blog era ends)
+
+The blog continues as [Information Equilibrium on Substack](https://infoeqm.substack.com/).

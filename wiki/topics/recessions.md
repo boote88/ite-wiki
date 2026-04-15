@@ -101,6 +101,14 @@ Smith predicted the recovery would be slow: even the initial rise to 4.4% (in Ma
 
 This is the strongest test of the "avalanche, not cycle" view: if COVID were purely exogenous, there should have been no leading indicators. The fact that JOLTS, the yield curve, and wage growth all signaled trouble *before* the pandemic means the recession was at least partly endogenous, with COVID as the trigger rather than the cause.
 
+## The "limits to wage growth" hypothesis
+
+An empirical observation that may explain when recessions occur: **when nominal wage growth reaches nominal GDP growth, a recession follows quickly.** The mechanism is plausibly Marxist — when wages eat into firm profits, investment declines, triggering a downturn — but Smith treats it as a purely empirical regularity.
+
+The data shows this pattern holds for every recession in the post-war record where Atlanta Fed wage growth tracker data is available. The model correctly predicted a recession around 2020 (wage growth was approaching NGDP growth by October 2019), though Smith won't claim the COVID recession as validation since the pandemic was the proximate cause. The next predicted crossing of wage growth with NGDP growth trend (~3.8%) is around **2027** — unless asset booms push the date later.
+
+A crucial implication: the causality in Keynesian thinking is **backwards**. The recession isn't caused by wages being "stuck too high" for full employment — it's caused by wage growth *exceeding* NGDP growth, which causes unemployment to rise, which *then* causes wage growth to decline ~6 months later. Both variables are **nominal**, so monetary policy has no impact on this mechanism. The Fed's social role (signaling, managing panic) may matter, but once the shock is over the economy returns to its standard DIEM rates regardless of what the Fed does.
+
 ## Why interest rates aren't a good policy indicator
 
 A consequence of the avalanche framing: trying to "steer" the economy with interest rates is like pouring more snow on a mountain to manage when an avalanche happens. You can postpone the avalanche but you also increase its eventual size. The Fed's mid-2000s tightening was successful in cooling the economy — and successful in setting up a much larger avalanche than would otherwise have occurred. There is no "stance" of monetary policy that is independent of where the economy already sits on the [[information-trap|information surface]] (see [[unobservables]]).
