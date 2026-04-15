@@ -1,0 +1,724 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="google-signin-client_id" content="453551886800-09q0r9ke91ke90jcoah8gqal03fjqqam.apps.googleusercontent.com" /><title>
+	Bauman Rare Books / First Editions, Signed and Inscribed Rare Book Dealers in New York, Las Vegas and Philadelphia
+</title>
+            <meta name="description" content="Bauman Rare Books offers an extraordinary selection of rare books and autographs in all fields. Visit us online, at our galleries in New York or Las Vegas, or call us at 1-800-99-BAUMAN" />
+        <meta name="og:title" content="Bauman Rare Books / First Editions, Signed and Inscribed Rare Book Dealers in New York, Las Vegas and Philadelphia" /><meta name="og:type" content="website" /><meta name="og:image" content="https://www.baumanrarebooks.com/Resources/StyledFrontend/assets/img/about-image.jpg" /><meta name="og:url" content="https://www.baumanrarebooks.com/" /><meta name="og:description" content="Bauman Rare Books offers an extraordinary selection of rare books and autographs in all fields. Visit us online, at our galleries in New York or Las Vegas, or call us at 1-800-99-BAUMAN" /><meta name="og:locale" content="en_US" /><meta name="og:site_name" content="Bauman Rare Books" /><link href="/Resources/StyledFrontend/assets/css/bundle-2-0-0-0?v=Fkqh_YRaOaUPOjEsOBI2sVs4H6WIFIO4IiGvkjRXbyo1" rel="stylesheet"/>
+
+
+        <script type="text/javascript" src="/Resources/StyledFrontend/assets/js/libs/modernizr-2.6.2.min.js"></script>        
+        <script type="text/javascript" src="/Resources/StyledFrontend/assets/js/jquery.1.9.1.min.js"></script>
+        
+        <script src="/Resources/StyledFrontend/assets/js/bundle-2-0-0-0?v=9Do2DSMfdmaubm2o0PAYT9EIPFuYO0asgK1ikmUsg6I1"></script>
+<script src="/Resources/js/jquery-autocomplete/bundle-2-0-0-0?v=-Yk6TBwgXvgc4KjX8JZPFDtFAuz7YC-QuGbUDXr5xDk1"></script>
+<link href="/Resources/js/jquery-autocomplete-css/bundle-2-0-0-0?v=RPYtTSDcy1SZeXDdhQOYKhR-P3luA7L1T_rmpk26jn41" rel="stylesheet"/>
+<script src="/Resources/StyledFrontend/assets/complementary-js/bundle-2-0-0-0?v=oQUeVg6kHbN8-j5zX1G7ml1667wTL0Wqv6Bzu-H7sZo1"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2CKN9S');</script>
+<!-- End Google Tag Manager -->
+
+        <script type="text/javascript" >
+            var validNavigation = false;
+
+            $(document).ready(function () {
+                InitializeValidations();
+                InitQuickSearch();
+                InitBackToTop();
+                ConfigureBlogUrl();
+                BindNavigationMobile();
+                if ($.isFunction(window.customDocumentReady))
+                    customDocumentReady();
+
+                ShowMessage();
+            });
+
+            function ShowMessage() {
+                var cookieName = '';
+                var message = $("#" + "ctl00_spanOneTimeNotification").text();
+                if (cookieName != '' && message != '' && !readCookie(cookieName)) {
+                    $.prompt(message,
+                        {
+                            buttons: { Confirm: false }
+                        });
+                    createCookie(cookieName, true, 365)
+                }
+            }
+
+            function createCookie(name, value, days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    var expires = "; expires=" + date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function eraseCookie(name) {
+                createCookie(name, "", -1);
+            }
+
+            function InitializeCurrency(currency) {
+                if (CurrencyConverterWS.InitializeExchangeRate != undefined)
+                    CurrencyConverterWS.InitializeExchangeRate(currency);
+            }
+
+            function ChangeCurrency(currencyLink) {
+                
+                var currency = $(currencyLink).attr('data-option');
+                if ($('#ddlCurrency').val() == currency)
+                    return;
+                
+                $('#loadingScreen').fadeIn();
+                
+                InitializeCurrency(currency);
+
+                var symbol = $(currencyLink).attr('data-symbol');
+
+                $('.iCurrency').html(symbol);
+
+                CurrencyConverterWS.StoreCurrency(currency, symbol, function () {
+
+                    ConvertShoppingCartPrices(currency, symbol);
+
+                    if ($.isFunction(window.customCurrencyConvert))
+                        customCurrencyConvert(currency, symbol);
+                    else
+                        $('#loadingScreen').fadeOut();
+                }, function() {});
+            }
+
+            function ConvertShoppingCartPrices(currency, symbol) {
+                var bookIds = [];
+                $('#tblItems').find('.pric').each(function () {
+                    bookIds.push($(this).parent().attr('class'));
+                });
+
+                if (bookIds.length > 0) {
+                    CurrencyConverterWS.CurrencyConversionForBookIds(bookIds, currency, symbol,
+                        function (result) {
+                            $(result).each(function (index, value) {
+                                $('#tblItems tr td[class="' + value.BookId + '"]').find('.pric').text(value.Price);
+                            });
+                        }, function () { });
+
+                    CurrencyConverterWS.CurrencyConversionForBooksSum(bookIds, currency, symbol, function (result) {
+                        $('#ctl00_floating_lblTotal').text('Total: ' + result);
+                    }, function () { });
+                }
+            }
+
+            var bookDiscountsContent = {};
+            function ConfigureBookDiscountTip() {
+                $('.DiscountedListPrice').each(function() {
+                    $(this).qtip({
+                        content: bookDiscountsContent[$(this).attr('item-id')],
+                        position: { corner: { target: 'leftTop', tooltip: 'bottomRight' } },
+                        show: { when: 'mouseover' },
+                        hide: { when: 'mouseleave' },
+                        style: {
+                            border: { width: 2, radius: 4 },
+                            width: 450,
+                            padding: 3,
+                            textAlign: 'center',
+                            tip: true,
+                            name: 'light',
+                            classes: { tooltip: 'rightArrow' }
+                        }
+                    });
+                });
+            }
+
+            function TrackBlog() {
+                BspaceIntegrationWS.TrackExternalLink(23, 'Blog', '"https://www.baumanrarebooks.com/blog"');
+            }
+
+            function BindNavigationMobile() {
+                $("#nav-open-btn").on("click", function () {
+                    $("html").toggleClass("sideMenuOpened");
+                });
+            }
+
+            function ConfigureBlogUrl() {
+                var blogLink = $('#menu').find('a[href="https://www.baumanrarebooks.com/blog"]');
+                blogLink.removeAttr('href');
+                blogLink.css('cursor', 'pointer');
+                blogLink.click(function() {
+                    TrackBlog();
+                    window.location.href = 'http://' + 'www.baumanrarebooks.com' + "/blog/";
+                });
+            }
+
+            function wireUpEvents(bookIds) {
+                $(window).on("beforeunload", function () {
+                    if (!validNavigation)
+                        BspaceIntegrationWS.TrackCartAbandon(bookIds);
+                });
+
+                // Attach the event keypress to exclude the F5 refresh
+                $(document).bind('keypress', function (e) {
+                    if (e.keyCode == 116) {
+                        validNavigation = true;
+                    }
+                });
+
+                // Attach the event click for all links in the page
+                $("a").bind("click", function () {
+                    validNavigation = true;
+                });
+
+                // Attach the event submit for all forms in the page
+                $("form").bind("submit", function () {
+                    validNavigation = true;
+                });
+
+                // Attach the event click for all inputs in the page
+                $("input[type=submit]").bind("click", function () {
+                    validNavigation = true;
+                });
+            }
+
+            var accepted = false;
+            function ConfirmSignUp() {
+                var enteredValue = $('#ctl00_txtNewsletterSignupName').val() != '' && $('ctl00_txtNewsletterSignupEmail').val() != '';
+                if (!accepted && enteredValue) {
+                    $.prompt('Thank you for subscribing to receive our emails. Please note that we respect your privacy and will not share your information. All emails will contain an option to unsubscribe at any time. Please confirm below.',
+                    {
+                        buttons: { Confirm: true, Cancel: false },
+                        callback: function(v, m, f) {
+                            accepted = v;
+                            if (v)
+                                $('#ctl00_btnewletter')[0].click();
+                        }
+                    });
+                }
+                else
+                    if(enteredValue)
+                        $('#ctl00_btnewletter')[0].click();
+            }
+
+            function InitBackToTop() {
+                var offset = 220;
+                var duration = 500;
+                jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.back-to-top').fadeIn(duration);
+                    } else {
+                        jQuery('.back-to-top').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.back-to-top').click(function (event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                    return false;
+                });
+            }
+
+            function ConfigureQuickSearch(txtBox, hdn, btn) {
+                mvnAlgoliaPrediction.initialize();
+                // The autocomplete function is called on the input textbox with id input_element
+                $("#" + txtBox).autocomplete({
+                    // minLength is the minimal number of input characters before starting showing
+                    // the autocomplete
+                    minLength: 1,
+                    source: mvnAlgoliaPrediction.search,
+                    // This function is executed when a suggestion is selected
+                    select: function (event, ui) {
+                        // Sets the text of the input textbox to the title of the object referenced
+                        // by the selected list item
+                        $(this).val(ui.item.label);
+                        $('#' + hdn).val(ui.item.ItemID);
+                        $('#' + btn).click();
+                        //return false;
+                    },
+                    open: function (event, ui) {
+                        //$('#divGrayOut').fadeIn();
+                    },
+                    close: function (event, ui) {
+                        $('#divGrayOut').fadeOut();
+                    }
+                });
+                if (typeof $("#" + txtBox).autocomplete().data("ui-autocomplete") !== 'undefined') {
+                    $("#" + txtBox).autocomplete().data("ui-autocomplete")._renderItem = function (ul, item) {
+                        // ul is the unordered suggestion list
+                        // item is a object in the data object that was send to the response function
+                        // after the JSON request
+                        // We append a custom formatted list item to the suggestion list
+                        var html = mvnAlgoliaPrediction.getDisplayTerm(item);
+                        return $("<li></li>").data("item.autocomplete", item).append(html).appendTo(ul);
+                    };                    
+                }
+            }
+
+            function GreyOut(txt, e, btn) {
+                if ($(txt).val() != "" && e.keyCode != 27) {
+                    $('#divGrayOut').fadeIn();
+                }
+            }
+
+            function InitQuickSearch() {
+                ConfigureQuickSearch('ctl00_txtQuickSearchFloating', 'ctl00_hdListSelectFloat', 'ctl00_btnQuickSearchFloating');
+                ConfigureQuickSearch('ctl00_txtQuickSearch', 'ctl00_hdListSelect', 'ctl00_btnQuickSearch');
+
+                $('#ctl00_txtQuickSearch').keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        $("#ctl00_btnQuickSearch").click();
+                        return false;
+                    }
+                });
+
+                $('#ctl00_txtQuickSearchFloating').keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        $("#ctl00_btnQuickSearchFloating").click();
+                        return false;
+                    }
+                });
+            }
+
+            function BindCollapsible(barContainerSelector, colapse, closedMsg, openedMsg) {
+
+                $(barContainerSelector).keypress(function (e) {
+                    if (e.keyCode == 13) {
+                        $(barContainerSelector).click();
+                    }
+                });
+
+                $(barContainerSelector).on("click", function () {
+                    $(colapse).slideToggle("slow", function () {
+                        var spanSelector = barContainerSelector + " span";
+                        var iconSelector = barContainerSelector + " em";
+                        if ($(this).css('display') == "none") {
+                            $(spanSelector).fadeOut(function () {
+                                $(spanSelector).text(closedMsg);
+                                $(spanSelector).fadeIn();
+                            });
+
+                            $(iconSelector).fadeOut(function () {
+                                $(iconSelector).removeClass('fa-minus-circle');
+                                $(iconSelector).addClass('fa-plus-circle');
+                                $(iconSelector).fadeIn();
+                            });
+                        } else {
+                            ExpandContainer(spanSelector, iconSelector, openedMsg);
+                        }
+                    });
+                });
+            }
+
+            function ExpandContainer(spanSelector, iconSelector, openedMsg) {
+                $(spanSelector).fadeOut(function () {
+                    $(spanSelector).text(openedMsg);
+                    $(spanSelector).fadeIn();
+                });
+
+                $(iconSelector).fadeOut(function () {
+                    $(iconSelector).addClass('fa-minus-circle');
+                    $(iconSelector).removeClass('fa-plus-circle');
+                    $(iconSelector).fadeIn();
+                });
+            }
+        </script>
+        <script type="text/javascript"  src="/Resources/StyledFrontend/assets/js/retina-1.1.0.js"></script>
+        
+        </head>
+    <body>
+        
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2CKN9S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <form name="aspnetForm" method="post" action="./85275.jpg?404%3bhttps%3a%2f%2fwww.baumanrarebooks.com%3a443%2fBookImages%2f85275.jpg" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvjmI1gtJp_B_NZL-qLb2fbyRXc7btVwDs80iwQQSKkBpj9cvRfz9XRNUHucFBaBVnMWUn_XG5GvCvEDgH0EeqQsJk1c4w9FVHIePUt6n8Uy77SqHWHiQEcDXVFQJmvpI7IJaeLb4vOTum6fqr_HwL8Q1&amp;t=32e5dfca" type="text/javascript"></script>
+<script src="../Resources/js/UI/Checkout/CheckOutGlobal.js?version=2.0" type="text/javascript"></script>
+<script src="../Resources/js/UI/CheckOut/BookListingsUI.js?version=2.0" type="text/javascript"></script>
+<script src="../AutoCompleteWS.asmx/js" type="text/javascript"></script>
+<script src="../CurrencyConverterWS.asmx/js" type="text/javascript"></script>
+<script src="../BspaceIntegrationWS.asmx/js" type="text/javascript"></script>
+<script src="../ManageItemsWS.asmx/js" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="69BFA96F" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="k+v72Rl0Hlw6IKJPHPSSoCInKs3OUXf8vhfuyzvB8f+Qr6sRs+4GIvUbTp8t8bU5UKj+z7lbcuDRnojpycrBt8ognBm5TLbpKk+y2OSBqy5p7q+ShRXuZBaX2iHjAbnY2MKDHUhjw7qGMDfaVZb++81/J7ti2ePPFuSbhMi9mDmYRgiAFvaoay3T9GfUv0n9Ulq+mep6g6+UaWc3xlVT4ZJ2Ad4JG2OzG67p4CMSGkGiSnogDoM0voXmWbCykyzxvorvwO8qJz6Nzo2ZYKnesjoL6htsruWUj2eqUk8oP349l/Iu70QEwGg9hBCY2V0i3rbUqQu1z+MMR7Ax5I72bkoCRzh8MJpcd2rhXLSLS7mO74xjacJmQwoYEA0GUfnR" />
+
+            <input type="hidden" name="ctl00$hdnGA4IntegrationEnabled" id="ctl00_hdnGA4IntegrationEnabled" value="True" />
+
+            
+            <div id="container">
+                <div id="inner-wrap">   
+                    <header id="header">
+                       <div class="container">
+							<div class="row">
+								<div id="toprow" class="clearfix hidden-xs">
+									<div id="leftTop" class="col-md-6">
+										<div id="logo-alt" class="hidden-xs">
+											<a id="ctl00_hyperLogo" href="https://www.baumanrarebooks.com/">
+											<img width="379" height="49" src="/Resources/StyledFrontend/assets/img/logo.png" alt="Bauman Rare Books">
+											</a>                                    
+										</div>
+										<ul class="menu-logo">
+											<li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=newyork">New York</a></li> 
+											<li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=philly">Philadelphia</a></li> 
+											<li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=lasvegas"> Las Vegas</a></li>
+										</ul>
+									</div><!-- //leftTop -->
+								
+									<div id="rightop" class="col-md-6">
+										<div class="listop" >
+											
+
+<div id="message_bar">
+    <!-- The content will be dynamically loaded in here -->
+</div>
+
+<ul>
+    <li  style="vertical-align:top; float: left;width:130px" class="cartToggle"><a href="javascript:void(0);"><em class="fa fa-shopping-cart" ></em> Shopping Bag (<span id="ctl00_floating_lblCount">0</span>)</a></li>                       
+    <li   style="vertical-align:top;"><a href="https://www.baumanrarebooks.com/account/wish-list.aspx"><em class="fa fa-star"></em> WishlisT</a></li>
+
+    <li id="ctl00_floating_siginLi" style="vertical-align:top;"><a id="ctl00_floating_signinlink" href="https://www.baumanrarebooks.com/account/login.aspx"><em class="fa fa-user"></em> Sign in</a></li>             
+    <li id="ctl00_floating_liCurrencies" style="vertical-align:middle;">
+        <div class="bfh-selectbox bfh-currencies" data-currency="USD" data-blank="false" data-flags="true">
+            <input type="hidden" value="" id="ddlCurrency" class="hdnCurrency">
+            <input type="hidden" value="" id="ddlSymbol" class="hdnSymbol">
+            <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+                <em class="fa iCurrency">$</em>
+                <span class="bfh-selectbox-option input-medium" data-option=""></span>
+                <strong class="caret"></strong>
+            </a>
+            <div class="bfh-selectbox-options">
+                <div role="listbox">
+                    <ul role="option">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<input type="hidden" name="ctl00$floating$hdnBookId" id="ctl00_floating_hdnBookId" />
+<div class="nav-top">
+    <div class="bag-box popCart" id="popCart" >
+		<h3>Shopping Bag</h3>
+		<a href="#" class="close" onClick="CloseBag(event)" title="Close Bag"><span style="display:none;">Close</span></a>
+        <div id="itemsContainer" class="items tabwrap scroll-pane">
+            <table id="tblItems" border="0" cellpadding="0" cellspacing="0" class="table">
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <p class="EmptyItems" style=''>
+                You have 0 items in your shopping bag, please add an item to continue.
+            </p>
+        </div>
+        <!--items-->
+        <footer>
+            <span id="ctl00_floating_lblTotal" class="total">$0.00</span>
+            <br />
+            <p class="btn_wrap">
+                <input type="button" class="btn_grey" id="continueShopping" value="Continue shopping" />&nbsp;&nbsp;
+                <input type="submit" name="ctl00$floating$checkOut" value="Go to shopping cart" id="ctl00_floating_checkOut" class="btn_mgenta checkOut" style="display:none;" />
+            </p>
+        </footer>
+    </div>
+    <!--bag-box-->
+</div>
+<!--nav-top-->
+
+									    </div><!-- //listop -->
+										
+										<div class="fsearch">
+											<div role="search" aria-label="search">  
+												<input name="ctl00$txtQuickSearch" type="text" id="ctl00_txtQuickSearch" title="SEARCH BY AUTHOR OR TITLE" class="form-control" aria-label="SEARCH BY AUTHOR OR TITLE" placeholder="SEARCH BY AUTHOR OR TITLE" onkeyup="GreyOut(this, event, &#39;ctl00_btnQuickSearch&#39;);" />
+												<input type="submit" name="ctl00$btnQuickSearch" value="Quick Search" id="ctl00_btnQuickSearch" title="Quick Search" style="display:none" />
+												<input type="hidden" name="ctl00$hdListSelect" id="ctl00_hdListSelect" />
+												<div class="clearfix"></div>
+												<p class="advsrc"><a href="https://www.baumanrarebooks.com/browse-books.aspx?isAdvancedSearch=1">Advanced Search</a></p>
+											</div>
+										</div><!-- //search -->
+									</div><!-- //rightop -->
+								</div> <!-- // Toprow-->
+							</div>
+
+                           <div style="display:none;">
+                               <span id="ctl00_spanOneTimeNotification"></span>
+                               <span id="ctl00_spanOneTimeNotificationCookieName"></span>
+                           </div>
+
+                            <div id="header-xs" class="visible-xs">
+                                <a class="nav-btn" id="nav-open-btn" style="cursor: pointer"></a>
+                                <div id="log-xs"><a id="ctl00_hyperLogoMobile" href="https://www.baumanrarebooks.com/"><img src="/Resources/StyledFrontend/assets/img/logo_mbl@2x.png" width="52" height="46" alt="Bauman Rare Books"></a></div>
+                                <p class="phone-xs"><a href="tel://80099228626"><em class="fa fa-phone"></em>  1-800-99-BAUMAN</a></p>
+                                <a id="ctl00_hyperMobLog" class="user-xs" href="https://www.baumanrarebooks.com/account/login.aspx"><em class="fa fa-user"></em><span style="display:none;">Login</span></a>
+                            </div><!-- //header-xs -->
+                        </div>
+						
+						<div id="fixed-toprow">
+							<div class="container">
+								<div class="row">
+								   
+									<div class="col-md-6">
+										<div id="logomini"><a id="ctl00_HyperLink1" href="https://www.baumanrarebooks.com/"><img src="/Resources/StyledFrontend/assets/img/logomini@2x.png" alt="Bauman Rare Books" width="83" height="89"></a></div>
+										<div class="socSign">
+											<ul>
+												<li class="cartToggle" >
+													<a href="javascript:void(0);" ><em class="fa fa-shopping-cart"></em>&nbsp; Shopping Bag (<span id="ctl00_lblCount"></span>)</a>
+												</li>
+                                                <li id="ctl00_liCurrencies">
+                                                    <div class="bfh-selectbox bfh-currencies" data-currency="USD" data-blank="false" data-flags="true">
+                                                        <input type="hidden" value="" id="ddlCurrencyFloat" class="hdnCurrency">
+                                                        <input type="hidden" value="" id="ddlSymbolFloat" class="hdnSymbol">
+                                                        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+                                                            <em class="fa iCurrency">$</em>
+                                                            <span class="bfh-selectbox-option input-medium" data-option=""></span>
+                                                            <strong class="caret" style="margin-top: 10px; margin-right: 7px;"></strong>
+                                                        </a>
+                                                        <div class="bfh-selectbox-options" style="top: 50%;">
+                                                            <div role="listbox">
+                                                                <ul role="option">
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+												<li><a href="https://www.baumanrarebooks.com/account/wish-list.aspx"><em class="fa fa-star"></em> WishlisT</a></li>
+												<li id="ctl00_siginLi"><a id="ctl00_signinlink" href="https://www.baumanrarebooks.com/account/login.aspx"><em class="fa fa-user"></em> My Account</a></li>             
+											</ul>
+										 </div><!-- //socSign -->
+									</div>
+
+									 <div class="fsearch col-md-6">
+									   <div role="search">  
+                                            <input name="ctl00$txtQuickSearchFloating" type="text" id="ctl00_txtQuickSearchFloating" title="SEARCH BY AUTHOR OR TITLE" class="form-control" aria-label="SEARCH BY AUTHOR OR TITLE" placeholder="SEARCH BY AUTHOR OR TITLE" onkeyup="GreyOut(this, event, &#39;ctl00_btnQuickSearchFloating&#39;);" />
+                                            <input type="submit" name="ctl00$btnQuickSearchFloating" value="Quick Search" id="ctl00_btnQuickSearchFloating" title="Quick Search" style="display:none" />
+											<input type="hidden" name="ctl00$hdListSelectFloat" id="ctl00_hdListSelectFloat" />
+											<div class="clearfix"></div>
+											<p class="advsrc"><a href="https://www.baumanrarebooks.com/browse-books.aspx?isAdvancedSearch=1">Advanced Search</a></p>
+										</div>
+									</div><!-- //search -->
+
+								</div>
+							</div>
+						 </div><!-- //fixed-toprow -->
+
+                        <nav id="nav" role="navigation">
+                            <span class="strip"></span>
+                            
+                            
+                                    <ul id="menu">        
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl01_hypMenuItem" href="https://www.baumanrarebooks.com/">home</a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl02_hypMenuItem" href="https://www.baumanrarebooks.com/browse-books.aspx">browse</a>
+                                        
+                                                <ul>
+                                            
+                                                <li id="ctl00_rptMenu_ctl02_rptSecondLevelMenu_ctl01_li">
+                                                    <a id="ctl00_rptMenu_ctl02_rptSecondLevelMenu_ctl01_hypSecondLevelMenuItem" href="https://www.baumanrarebooks.com/browse-books.aspx">Browse All Topics</a>
+                                                    
+                                                </li>
+                                            
+                                                <li id="ctl00_rptMenu_ctl02_rptSecondLevelMenu_ctl02_li">
+                                                    <a id="ctl00_rptMenu_ctl02_rptSecondLevelMenu_ctl02_hypSecondLevelMenuItem" href="https://www.baumanrarebooks.com/rare-books/featured/">Featured Books</a>
+                                                    
+                                                </li>
+                                            
+                                                </ul>
+                                            
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl03_hypMenuItem" href="https://www.baumanrarebooks.com/bauman-gifts">gifts</a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl04_hypMenuItem" href="https://www.baumanrarebooks.com/catalogs.aspx">catalogues</a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl05_hypMenuItem" href="https://www.baumanrarebooks.com/selling-something.aspx">sell my books</a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl06_hypMenuItem" href="https://www.baumanrarebooks.com/about-us.aspx">about</a>
+                                        
+                                                <ul>
+                                            
+                                                <li id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl01_li">
+                                                    <a id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl01_hypSecondLevelMenuItem" href="https://www.baumanrarebooks.com/about-us/our-staff.aspx">Staff</a>
+                                                    
+                                                </li>
+                                            
+                                                <li id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl02_li">
+                                                    <a id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl02_hypSecondLevelMenuItem" href="https://www.baumanrarebooks.com/about-us/locations.aspx">Locations</a>
+                                                    
+                                                </li>
+                                            
+                                                <li id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl03_li">
+                                                    <a id="ctl00_rptMenu_ctl06_rptSecondLevelMenu_ctl03_hypSecondLevelMenuItem" href="https://www.baumanrarebooks.com/customer-service/faq.aspx">FAQs</a>
+                                                    
+                                                </li>
+                                            
+                                                </ul>
+                                            
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl07_hypMenuItem" href="https://www.baumanrarebooks.com/contact-us.aspx">contact</a>
+                                        
+                                    </li>
+                                
+                                    <li>
+                                        <a id="ctl00_rptMenu_ctl08_hypMenuItem" href="https://www.baumanrarebooks.com/account/login.aspx">my account</a>
+                                        
+                                    </li>
+                                
+                                    </ul>
+                                
+                        </nav><!-- //navigation -->
+                    </header><!-- //header -->                
+                
+                <div style="display: none">
+                    <span aria-label="Contact me by fax"><input id="ctl00_contact_me_by_fax_only" type="checkbox" name="ctl00$contact_me_by_fax_only" tabindex="-1" /><label for="ctl00_contact_me_by_fax_only">Contact me by fax</label></span>
+                </div>
+                    
+    <div id="main" role="main" class="subpages">
+        <div class="container">
+            <header>
+                <h3 class="title_line left">Page Not Found</h3>
+            </header>
+            <span id="ctl00_ContentPlaceHolder_SnippetContent"><span lang="EN">
+<p>The page requested could not be found.</p>
+<p>If you know the title or author of the book that you are seeking, please visit our <a href="http://www.baumanrarebooks.com/advanced-search.aspx">Advanced Search Page</a>. If you are interested in a particular subject area, please visit our <a href="http://www.baumanrarebooks.com/browse-books.aspx">Browse</a> page where you can search our inventory by category.</p>
+<p>For more information, please contact Bauman Rare Books at 1-800-99-BAUMAN.</p>
+</span></span>
+        </div>
+    </div>
+
+
+                    <!-- start: Back to Top -->
+	                <a class="back-to-top" title="Back to top"><em class="sprite-top-arrow"></em></a>
+	                <!-- end: Back to Top -->
+                    
+                    <div class="fancybox-overlay fancybox-overlay-fixed" style="display: none; z-index: 5000;" id="divGrayOut"></div>
+                    <div class="fancybox-overlay fancybox-overlay-fixed" style="display: none; z-index: 6000;" id="divGrayOutBag"></div>
+                    
+                    <div id="loadingScreen" class="fancybox-overlay fancybox-overlay-fixed" style="width: auto; height: auto; display: none;">
+                        <div id="fancybox-loading">
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <footer id="footer">
+                        <div class="container">
+                            <div class="hidden-xs">
+                            <div class="f-catlog">
+                                <h4>Receive Electronic Catalogues</h4>
+                                
+                                <div class="form-inline validationGroup" role="form">
+                                    <div class="form-group" style="vertical-align: top;">
+                                        <input name="ctl00$txtNewsletterSignupName" type="text" id="ctl00_txtNewsletterSignupName" class="form-control required" placeholder="Full Name" title="Full name is required." aria-label="Full name" />
+                                    </div>
+                                    <div class="form-group" style="vertical-align: top;">
+                                        <input name="ctl00$txtNewsletterSignupEmail" type="text" id="ctl00_txtNewsletterSignupEmail" class="form-control required email" placeholder="Email" title="Please enter a valid email address." aria-label="Email" />
+                                    </div>
+                                    <div class="form-group btnblackwrap" style="vertical-align: top;">
+                                        <a class="btn_black causesValidation" onclick="ConfirmSignUp();" style="cursor: pointer;" tabindex="0" role="button">SIGN UP&nbsp;<em class="fa fa-caret-right"></em></a>
+
+                                    <a id="ctl00_btnewletter" class="btn_black" href="javascript:__doPostBack(&#39;ctl00$btnewletter&#39;,&#39;&#39;)" style="display:none">SIGN UP&nbsp;<em class="fa fa-caret-right"></em></a>
+                                    </div>
+                                </div>
+                            </div> <!-- //f-catlog -->
+
+                            <div class="row">
+                                <div class="wdg-foot col-md-3 col-sm-3">
+                                    <h4 class="ft-title">customer care</h4>
+                                    <ul>
+                                        <li><a href="https://www.baumanrarebooks.com/about-us.aspx">About</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/contact-us.aspx">Contact</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/customer-service/gift-services.aspx">Gift Services</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/customer-service/shipping.aspx">Shipping and Guarantee</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/gift-certificates.aspx">Gift Certificates</a></li>
+                                    </ul>
+                                </div><!-- //wdg-foot -->
+                                <div class="wdg-foot col-md-3 col-sm-3">
+                                    <h4 class="ft-title">books</h4>
+                                    <ul>
+                                        <li><a href="https://www.baumanrarebooks.com/bauman-gifts">Gifts</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/browse-books.aspx">Browse</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/catalogs.aspx">Catalogues</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/selling-something.aspx">Books To Sell</a></li>
+										<li><a href="https://www.baumanrarebooks.com/customer-service/glossary.aspx">Glossary</a></li>
+                                    </ul>
+                                </div><!-- //wdg-foot -->
+
+
+
+                                <div class="wdg-foot col-md-3 col-sm-3">
+                                    <h4 class="ft-title">Connect</h4>
+                                    <ul>
+                                        <li><a href="https://www.baumanrarebooks.com/blog/" onclick="TrackBlog();">Articles</a></li>
+                                        <li><a href="http://www.facebook.com/baumanrarebooks" target="_blank">Facebook</a></li>
+                                        <li><a href="https://www.instagram.com/baumanrarebooks" target="_blank">Instagram</a></li>
+                                    </ul>
+                                </div><!-- //wdg-foot -->
+                                <div class="wdg-foot locate col-md-3 col-sm-3">
+                                    <h4 class="ft-title">locations</h4>
+                                    <ul>
+                                        <li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=newyork"><em class="fa fa-map-marker"></em>&nbsp;  New York</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=philly"> <em class="fa fa-map-marker"></em>&nbsp; Philadelphia</a></li>
+                                        <li><a href="https://www.baumanrarebooks.com/about-us/locations.aspx?location=lasvegas"><em class="fa fa-map-marker"></em>&nbsp; Las Vegas</a></li>
+                                    </ul>
+                                </div><!-- //wdg-foot -->
+                            </div>
+
+                            <div class="row">
+                                    <div class="left-btm col-md-7 col-sm-7">
+                                    <figure><img src="/Resources/StyledFrontend/assets/img/logo_btm.png" alt=""></figure>
+                                    <p class="copyright"> &copy; Copyright 2026, Bauman Rare Books | <a href="https://www.baumanrarebooks.com/privacy-policy.aspx">Privacy Policy</a> | <a href="https://www.baumanrarebooks.com/accessibility.aspx">Accessibility</a></p>
+                                    </div>
+                            </div>
+                            </div>
+
+                            <div id="footMobile" class="visible-xs">
+                            <ul class="listmenu-xs">
+                                <li><a href="https://www.baumanrarebooks.com/contact-us.aspx">Contact Us <em class="fa fa-plus"></em> </a></li>
+                                <li><a href="https://www.baumanrarebooks.com/account/create-account.aspx">Create An Account <em class="fa fa-plus"></em> </a></li>
+                            </ul>
+
+                            <p class="copyright-xs">&copy; Copyright 2026 Bauman Rare Books <br><a href="https://www.baumanrarebooks.com/privacy-policy.aspx">Privacy Policy</a><br><a href="https://www.baumanrarebooks.com/accessibility.aspx">Accessibility</a></p>
+
+                            </div> <!-- //footMobile -->
+                        </div>
+                     </footer><!-- //footer -->
+                </div>
+            </div>
+        </form>
+        
+    </body>
+</html>

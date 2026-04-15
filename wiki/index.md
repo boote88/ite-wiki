@@ -92,3 +92,5 @@ Early ingest summaries from 2013–2015. No longer created — source posts are 
 - [[math-toolkit]] — Running catalog of analytical and computational techniques used in the ITM (DEs, fitting, DIEM, simulation)
 - [[standard-results-from-ie]] — Reference catalog of mainstream economic results derivable from information equilibrium
 - [[1990s-phase-transition]] — Catalog of economic trends that all changed in the 1990s as the demographic transition completed
+- [[readers-guide]] — Curated 18-post reading list of original blog posts in five tiers
+- [[wiki-readers-guide]] — Guided tour through all 35 key wiki pages in logical reading order
